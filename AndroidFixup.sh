@@ -4,7 +4,7 @@ set -x
 
 OUTFILE=$1
 MY_DIR=`dirname $1`
-
+DESTDIR=system/amino
 
 
 
@@ -39,11 +39,12 @@ else
 fi
 
 
-cp src/sg/amino.js $ANDROID_PRODUCT_OUT/data/phonetest
-cp src/sg/Bacon.js $ANDROID_PRODUCT_OUT/data/phonetest
-cp src/jscommon/*.js $ANDROID_PRODUCT_OUT/data/phonetest
-cp resources/*.* $ANDROID_PRODUCT_OUT/data/phonetest
-cp tests/phone3.* $ANDROID_PRODUCT_OUT/data/phonetest
+cp src/sg/amino.js $ANDROID_PRODUCT_OUT/$DESTDIR
+cp src/sg/Bacon.js $ANDROID_PRODUCT_OUT/$DESTDIR
+cp src/sg/widgets.js $ANDROID_PRODUCT_OUT/$DESTDIR
+cp resources/*.* $ANDROID_PRODUCT_OUT/$DESTDIR
+cp tests/aminoFlyingRect.js $ANDROID_PRODUCT_OUT/$DESTDIR
+
 
 #the following makes the  make system run everytime you build android. If you comment it out 
 # you either need to touch the AndroidFixup.sh or 

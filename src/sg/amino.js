@@ -4,7 +4,7 @@
 */
 
 var fs = require('fs');
-var bacon = require('./Bacon');
+var bacon = require(process.env.AMINOPATH+'/Bacon');
 //var sgtest = require("./build/Release/sgtest.node");
 
 var OS = "KLAATU";

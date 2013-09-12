@@ -3,7 +3,7 @@
 @desc a dummy header to work around a doc generation bug. ignore
 */
 
-var amino = require('./amino.js');
+var amino = require(process.env.AMINOPATH+'/amino.js');
 
 function camelize(s) {
 	return s.substring(0,1).toUpperCase() + s.substring(1);
