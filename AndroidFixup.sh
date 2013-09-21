@@ -43,7 +43,7 @@ cp src/sg/Bacon.js $ANDROID_PRODUCT_OUT/$DESTDIR
 cp src/sg/widgets.js $ANDROID_PRODUCT_OUT/$DESTDIR
 cp resources/*.* $ANDROID_PRODUCT_OUT/$DESTDIR
 cp tests/aminoFlyingRect.js $ANDROID_PRODUCT_OUT/$DESTDIR
-
+cp tests/WidgetGallery.js $ANDROID_PRODUCT_OUT/$DESTDIR
 
 #the following makes the  make system run everytime you build android. If you comment it out 
 # you either need to touch the AndroidFixup.sh or 
